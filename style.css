@@ -1,0 +1,43 @@
+/* * {
+   color: red;
+} */
+
+body {
+    background-color: blueviolet; 
+}
+
+fieldset {
+    margin: 15px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.container {
+     background-color:rgba(165, 42, 42, 0.424);
+     margin: 150px;
+     padding-left: 40px;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     border-radius: 10cqmax;
+}
+
+.firstheader {
+    text-align: center;
+    text-transform: none;
+    color: white;
+    background-color: black;
+    padding: 0 0 200px 0;
+}
+
+legend {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button {
+    color: whitesmoke;
+    background-color: black;
+    
+}

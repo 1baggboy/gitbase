@@ -12,60 +12,74 @@
     <title>Bio-Data Form</title>
 </head>
 <body>
-    <h1>
+<div class="firstheader">
+    <h1 style="text-transform: uppercase;">
     Fill in the Bio-Data
     </h1>
+    <p>Please Make Sure You Fill In All The Required. (*)</p>
+</div>
+<div class="container">
     <form action="*" method="process.php">
      <fieldset><!--fieldset 1-->
-        <legend>First Name</legend>
+        <legend>First Name *</legend>
         <input type="text" id="fname" name="fname" placeholder="Enter First Name" required>
     </fieldset>
     <!--fieldset 1 End-->
-    
+
     <fieldset><!--fieldset 2-->
-        <legend>Last Name</legend>
+        <legend>Last Name *</legend>
         <input type="text" id="lname" name="lname" placeholder="Enter Last Name" required>
      </fieldset>
     <!--fieldset 2 End-->
     
     <fieldset><!--fieldset 3-->
-        <legend>Middle Name</legend>
-        <input type="text" id="mmiddle" name="mname" placeholder="Enter Middle Name" required>
+        <legend>Middle Name *</legend>
+        <input type="text" id="mname" name="mname" placeholder="Enter Middle Name" required>
      </fieldset>
     <!--fieldset 3 End-->
     
     <fieldset><!--fieldset 4-->
-        <legend>Email</legend>
+        <legend>Email *</legend>
         <input type="email" id="email" name="email" placeholder="Enter Email" required>
      </fieldset>
     <!--fieldset 4 End-->
 
     <fieldset><!--fieldset 5-->
-        <legend>Phone Number</legend>
+        <legend>Phone Number *</legend>
         <input type="text" id="phone number" name="phone numbet" placeholder="Enter Phone Number" required>
      </fieldset>
     <!--fieldset 5 End-->
 
 <fieldset><!--fieldset 6-->
-        <legend>Gender</legend>
-    <label type="radio" id="male">Male</label>
-    <label type="radio" id="female">Female</label>
-     </fieldset>
+        <legend>Gender *</legend>
+    <input type="radio" name="gender" id="rad1" value="male">
+    <label for="rad1">Male</label>
+    <input type="radio" name="gender" id="rad2" value="female">
+    <label for="rad2">Female</label>
+</fieldset>
     <!--fieldset 6 End-->
     
-    <fieldset><!--fieldset 6-->
-        <legend>Password</legend>
+    <fieldset><!--fieldset 7-->
+        <legend>Password *</legend>
         <input type="password" id="password" name="password " placeholder="Enter Password" required>
      </fieldset>
-    <!--fieldset 6 End-->
-    
-    <button type="button" name="btn">Submit</button>
-    </form>
-    <script type="text/JavaScript">
-     alert("Bio-Data Form")
-     console.log("Successfully Submitted")
+    <!--fieldset 7 End-->
+
+    <fieldset><!--fieldset 8-->
+        <legend>Date of Birth *</legend>
+        <input type="date" id="dob" name="dob" required>
+     </fieldset>
+    <!--fieldset 8 End-->
+    <a href="" target="_blank">
+    <button type="submit" id="btn" target="blank">Submit</button>
+</a>    
+</div>
+</form>
+    <!-- <script type="text/JavaScript">
+     alert("Submitted Successfully")
+     console.log("Bio-data Form")
      var value = 2+4
      console.log(value)
-    </script>
+    </script> -->
 </body>
 </html>
