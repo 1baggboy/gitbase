@@ -2,41 +2,58 @@
    color: red;
 } */
 
-html, body, {
-    background-color: blueviolet; 
-    padding: 0;
-    margin: 0;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
 
 fieldset {
-    margin: 15px;
+    margin: 0 100px 0 100px;
     text-align: center;
-    padding: 15px;
+    padding: 10px 50px 10px 50px;
     border-radius: 5px;
-    width: 200px;
+    background-color: #11151C;
+    align-content: center;
+    border: 1px solid;
+    border-radius: 20px;
+    border-style: 20px groove;
+    border-color: red navy magenta purple;
 }
 
 .container {
-     background-color:rgba(165, 42, 42, 0.424);
-     margin: 150px;
-     padding-left: 40px;
-     padding-top: 10px;
-     padding-bottom: 10px;
-     border-radius: 10cqmax;
+    background-color: #0e0c0c;
+    max-width: 500px;
+    height: auto;
+    margin: auto;
+    margin-top: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 3px solid;
+    border-radius: 20px;
+    border-style: 20px groove;
+    border-color: red navy magenta purple;
+    animation:glow 2s ease-in-out infinite; 
+    color: linear-gradient(45deg, navy, purple, red, yellow, hotpink, green, brown, cyan, magenta );
+    z-index: -1;
 }
 
-.firstheader {
-    text-align: center;
-    text-transform: none;
-    color: white;
-    background-color: black;
-    padding: 0 0 200px 0;
-    font-size: 80px;
+@keyframes glow {
+50% {
+    border-color: red;
+}
+
+25% {
+    border-color: navy;
+}
+
+50% {
+    border-color: magenta;
+}
+
+75% {
+    border-color: purple;
+}
+
+100% {
+    border-color: red;
+}
+
 }
 
 legend {
@@ -44,8 +61,27 @@ legend {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-button {
-    color: whitesmoke;
-    background-color: black;
     
+
+.header1, #subtext {
+    color: white;
+    text-align: center;
+
+}
+    
+.btn {
+    /* Set a style for the submit button */
+    background-color: dodgerblue;
+    color: white;
+    padding: 10px 50px 10px 50px;
+    border: none;
+    cursor: pointer;
+    width: 35%;
+    border-radius: 5px 0 5px 0;
+    margin: 5px 0 5px 170px;
+
+}
+
+#rad1 type=[ra {
+    color:aliceblue;
 }

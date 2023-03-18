@@ -9,17 +9,15 @@
     <meta name="author" content="Adams Paul">
     <title>Bio-Data Form</title>
     <link rel="stylesheet" href="style.css">
+   
     <title>Bio-Data Form</title>
 </head>
-<body>
-<div class="firstheader">
-    <h1 style="text-transform: uppercase;">
-    Fill in the Bio-Data
-    </h1>
-    <p>Please Make Sure You Fill In All The Required. (*)</p>
-</div>
+<body style="background-color: black;">
+    
 <div class="container">
-    <form action="*" method="process.php">
+    <h1 class="header1">Fill in the Bio-Data</h1>
+        <p id="subtext">Please Make Sure You Fill In All The Required. (*)</p>
+        <form name="myForm" action="" onsubmit="return validateForm()" style="max-width:500px;margin:auto">
      <fieldset><!--fieldset 1-->
         <legend>First Name *</legend>
         <input type="text" id="fname" name="fname" placeholder="Enter First Name" required>
@@ -52,9 +50,9 @@
 
 <fieldset><!--fieldset 6-->
         <legend>Gender *</legend>
-    <input type="radio" name="gender" id="rad1" value="male">
+    <input type="radio" name="gender" class="rad1" value="male">
     <label for="rad1">Male</label>
-    <input type="radio" name="gender" id="rad2" value="female">
+    <input type="radio" name="gender" class="rad2" value="female">
     <label for="rad2">Female</label>
 </fieldset>
     <!--fieldset 6 End-->
@@ -70,8 +68,9 @@
         <input type="date" id="dob" name="dob" required>
      </fieldset>
     <!--fieldset 8 End-->
+    <br>    
     <a href="" target="_blank">
-    <button type="submit" id="btn" target="blank">Submit</button>
+    <button type="submit" class="btn">Submit</button>
 </a>    
 </div>
 </form>
