@@ -9,7 +9,7 @@
             "port": 5501,
             "request": "attach",
             "type": "chrome",
-            "webRoot": "${workspaceFolder}"
+            "webRoot": "${https://1baggboy-jubilant-space-bassoon-wrr6x9vq7973grrv-5501.preview.app.github.dev/}"
         },
         {
             "type": "chrome",
