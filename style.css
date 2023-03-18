@@ -63,7 +63,7 @@ legend {
 
     
 
-.header1, #subtext {
+.header1, #subtext, .header6 {
     color: white;
     text-align: center;
 
@@ -81,7 +81,14 @@ legend {
     margin: 5px 0 5px 170px;
 
 }
-
-#rad1 type=[ra {
-    color:aliceblue;
+label {
+    color:white;
 }
+/* .foothead {
+    border-top: 3px solid gold;
+    max-width: 1000px;
+    margin: 100px 650px 5px 650px;
+    height: auto;
+    padding-left: 100px;
+    padding-right: 100px;
+} */
