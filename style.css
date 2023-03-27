@@ -84,6 +84,19 @@ legend {
 label {
     color:white;
 }
+
+.dipkick {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px 0 25px 25px;
+    font-size: 18px;
+    margin: 0 0 150px 0;
+    color:white;
+    border: 20px;
+    font-weight: bold;
+    background-color: rgb(22, 22, 43);
+}
+
 /* .foothead {
     border-top: 3px solid gold;
     max-width: 1000px;
@@ -92,3 +105,52 @@ label {
     padding-left: 100px;
     padding-right: 100px;
 } */
+
+/* Style all input fields */
+input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+  }
+  
+  /* Style the container for inputs */
+  .container {
+    padding: 20px;
+  }
+  
+  /* The message box is shown when the user clicks on the password field */
+  #message {
+    display:none;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  
+  #message p {
+    padding: 10px 35px;
+    font-size: 18px;
+  }
+  
+  /* Add a green text color and a checkmark when the requirements are right */
+  .valid {
+    color: green;
+  }
+  
+  .valid:before {
+    position: relative;
+    left: -35px;
+    content: "&#10004;";
+  }
+  
+  /* Add a red text color and an "x" icon when the requirements are wrong */
+  .invalid {
+    color: red;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "&#10006;";
