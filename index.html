@@ -18,7 +18,7 @@
         <div class="dipnik">SERVICES</div>
         <div class="dipnik">BLOG</div>
         <div class="dipnik">CONTACT</div>
-        <div class="dipnik">ABOUT US</div>
+        <div class="dipnik" style="background-color: rgb(68, 47, 255);">ABOUT US</div>
 
     </div>
 </header> <!--header Ending -->
@@ -26,8 +26,8 @@
 <div class="container">
     <h1 class="header1">Fill in the Bio-Data</h1>
         <p id="subtext">Please Make Sure You Fill In All The Required. (*)</p>
-        <form name="myForm" action="" onsubmit="return validateForm()" style="max-width:500px; margin:auto">
-     <fieldset><!--fieldset 1-->
+        <form onsubmit="return confirm('Do you really want to submit the form?');">
+        <fieldset><!--fieldset 1-->
         <legend>First Name *</legend>
         <input type="text" id="fname" name="fname" placeholder="Enter First Name" required>
     </fieldset>
@@ -68,7 +68,7 @@
     
     <fieldset><!--fieldset 7-->
         <legend for="psw" >Password *</legend>
-        <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+        <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Password" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
      </fieldset>
     <!--fieldset 7 End-->
 
@@ -80,7 +80,7 @@
     <!--fieldset 8 End-->
     <br>    
     <a href="" target="_blank">
-    <button class="btn" type="submit">Submit</button>
+    <button onclick="missingFieldWarningPopup()" class="btn" type="submit">Submit</button>
 </a>    
 </div>
 </form>

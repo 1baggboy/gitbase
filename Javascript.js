@@ -58,8 +58,7 @@ myInput.onkeyup = function() {
     length.classList.remove("valid");
     length.classList.add("invalid");
   }
-}
-function showAlert('Welcome Aboard'); {
-    var myText = "Kindly Fill Out The Required;
-    alert ('Welcome Aboard');
+
+    function missingFieldWarningPopup() {
+  alert("You forgot to fill out all the required input fields!")
 }
