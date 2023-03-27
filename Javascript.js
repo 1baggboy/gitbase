@@ -1,7 +1,7 @@
 function showAlert() {
     var myText = "This can be whatever text you like!";
     alert ('Welcome Aboard');
-
+}
 var myInput = document.getElementById("psw");
 var letter = document.getElementById("letter");
 var capital = document.getElementById("capital");
