@@ -59,6 +59,6 @@ myInput.onkeyup = function() {
     length.classList.add("invalid");
   }
 
-    function missingFieldWarningPopup() {
+  function missingFieldWarningPopup() {
   alert("You forgot to fill out all the required input fields!")
 }
