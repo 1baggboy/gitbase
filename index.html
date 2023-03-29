@@ -13,90 +13,84 @@
     <title>Bio-Data Form</title>
 </head>
 <body style="background-color: black;">
-    <div class="dipkick"> 
+    <div class="dipkick"><!-- Div Opening 1 -->
         <div class="dipnik">HOME </div>
         <div class="dipnik">SERVICES</div>
         <div class="dipnik">BLOG</div>
         <div class="dipnik">CONTACT</div>
-        <div class="dipnik" style="background-color: rgb(68, 47, 255);">ABOUT US</div>
+        <div class="dipnik">ABOUT US</div>
 
-    </div>
-</header> <!--header Ending -->
+    </div><!-- Div Ending 1 -->
+</header><!--header Ending -->
     
-<div class="container">
+<div class="container"><!-- Div Opening 2-->
     <h1 class="header1">Fill in the Bio-Data</h1>
         <p id="subtext">Please Make Sure You Fill In All The Required. (*)</p>
-        <form onsubmit="return confirm('Do you really want to submit the form?');">
-        <fieldset><!--fieldset 1-->
+       <form onsubmit="return confirm('Do you really want to submit the form?');"><!-- Form Opening -->
+   
+    <fieldset><!-- fieldset 1 -->
         <legend>First Name *</legend>
         <input type="text" id="fname" name="fname" placeholder="Enter First Name" required>
-    </fieldset>
-    <!--fieldset 1 End-->
+    </fieldset><!-- fieldset 1 End-->
 
-    <fieldset><!--fieldset 2-->
+    <fieldset><!-- fieldset 2 -->
         <legend>Last Name *</legend>
         <input type="text" id="lname" name="lname" placeholder="Enter Last Name" required>
-     </fieldset>
-    <!--fieldset 2 End-->
+     </fieldset><!-- fieldset 2 End -->
     
-    <fieldset><!--fieldset 3-->
+    <fieldset><!-- fieldset 3 -->
         <legend>Middle Name *</legend>
         <input type="text" id="mname" name="mname" placeholder="Enter Middle Name" required>
-     </fieldset>
-    <!--fieldset 3 End-->
+     </fieldset><!-- fieldset 3 End -->
     
-    <fieldset><!--fieldset 4-->
+    <fieldset><!-- fieldset 4 -->
         <legend>Email *</legend>
         <input type="email" id="email" name="email" placeholder="Enter Email" required>
-     </fieldset>
-    <!--fieldset 4 End-->
+     </fieldset><!-- fieldset 4 End -->
 
-    <fieldset><!--fieldset 5-->
+    <fieldset><!-- fieldset 5 -->
         <legend>Phone Number *</legend>
         <input type="text" id="phone number" name="phone numbet" placeholder="Enter Phone Number" required>
-     </fieldset>
-    <!--fieldset 5 End-->
+     </fieldset><!-- fieldset 5 End -->
 
-<fieldset><!--fieldset 6-->
+
+    <fieldset><!-- fieldset 6 -->
         <legend>Gender *</legend>
-    <input class="rad1" type="radio" name="gender"  value="male">
-    <label  for="rad1">Male</label>
-    <input type="radio" name="gender" class="rad2" value="female">
-    <label for="rad2">Female</label>
-</fieldset>
-    <!--fieldset 6 End-->
+       <input class="rad1" type="radio" name="gender"  value="male">
+       <label for="rad1">Male</label>I'm
+       <input type="radio" name="gender" class="rad2" value="female">
+       <label for="rad2">Female</label>
+    </fieldset><!-- fieldset 6 End -->
     
-    <fieldset><!--fieldset 7-->
+    <fieldset><!-- fieldset 7 -->
         <legend for="psw" >Password *</legend>
         <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Password" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
-     </fieldset>
-    <!--fieldset 7 End-->
+    </fieldset><!-- fieldset 7 End -->
 
 
-    <fieldset><!--fieldset 8-->
+    <fieldset><!-- fieldset 8 -->
         <legend>Date of Birth *</legend>
         <input type="date" id="dob" name="dob" required>
-     </fieldset>
-    <!--fieldset 8 End-->
+     </fieldset><!-- fieldset 8 End -->
     <br>    
     <a href="" target="_blank">
     <button onclick="missingFieldWarningPopup()" class="btn" type="submit">Submit</button>
 </a>    
-</div>
-</form>
-<div id="message">
+</div><!-- Div Ending 2 -->
+</form><!-- Form Ending -->
+<div id="message"><!-- Div Opening 3 -->
     <h3>Password must contain the following:</h3>
     <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
     <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
     <p id="number" class="invalid">A <b>number</b></p>
     <p id="length" class="invalid">Minimum <b>8 characters</b></p>
-  </div>
-    <div class="foothead">
-    <footer>
+  </div><!-- Div Ending 3 -->
+    <div class="foothead"><!-- Div Opening 4 -->
+    <footer> <!-- Footer Opening -->
         <h6 class="header6">
             <span>&#169</span>Paul Adams Webpage, disclaimers be warned.   
         </h6>
-    </footer>
-    </div>
+    </footer><!-- Footer Ending -->
+    </div><!-- Div Ending 4 -->
 </body>
 </html>
